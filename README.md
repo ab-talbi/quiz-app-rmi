@@ -7,16 +7,21 @@
 ## Partie Serveur <a name = "serveur"></a>
 La classe serveur contient les implementations des methodes de l'interface remote IServeur. Les methodes sont :
 
--- Question questionSuivante()
--- boolean validerLaReponse(int question, int reponse)
--- int getScore()
--- int getNombreDeQuestion()
+<ul>
+  <li>Question questionSuivante()</li>
+  <li>boolean validerLaReponse(int question, int reponse)</li>
+  <li>int getScore()</li>
+  <li>int getNombreDeQuestion()</li>
+</ul>
 
 et d'autres methodes comme :
 
--- void initialiserLesQuestions() pour l'initialisation des questions
+<ul>
+  <li>void initialiserLesQuestions() pour l'initialisation des questions</li>
+</ul>
 
 ![1](https://github.com/ab-talbi/quiz-app-rmi/assets/101748749/f1d2aaac-71f3-4a36-b29d-a2a28cd69f61)
+<br>
 un exemple de question
 
 <br>
@@ -32,9 +37,10 @@ L'utilisateur repondre au question et passe d'une question à une autre en utili
  <br>
 
 ## Téchnologies utilisés
-
-Java RMI
-Java Swing
+<ul>
+  <li>Java RMI</li>
+  <li>Java Swing</li>
+</ul>
 
 ## Réalisé par : TALBI AYOUB
 
