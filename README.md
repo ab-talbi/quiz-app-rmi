@@ -46,7 +46,7 @@ L'utilisateur repondre au question et passe d'une question à une autre en utili
 <ul>
   <li>Cloner le projet ou le télecharger sous form zip</li>
   <li>Lancer le serveur de ServeurMain</li>
-  <li>Lancer UtilisateurMain1 ou UtilisateurMain1</li>
+  <li>Lancer UtilisateurMain1 ou UtilisateurMain2</li>
   <li>Commencer à répondre au questions</li>
 </ul>
 
