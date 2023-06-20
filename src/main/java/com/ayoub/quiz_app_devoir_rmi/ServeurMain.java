@@ -1,3 +1,8 @@
+/**
+ * @author TALBI Ayoub
+ * @date 18-06-2023
+ */
+
 package com.ayoub.quiz_app_devoir_rmi;
 
 import java.rmi.Naming;

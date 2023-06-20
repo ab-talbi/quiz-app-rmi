@@ -1,3 +1,8 @@
+/**
+ * @author TALBI Ayoub
+ * @date 18-06-2023
+ */
+
 package com.ayoub.quiz_app_devoir_rmi;
 
 import java.rmi.Naming;
@@ -20,6 +25,10 @@ public class Utilisateur extends UnicastRemoteObject{
     private JButton envoyerButton;
     private int questionCourrante;
 
+    /**
+     * L'objet utilisateur, connecté au serveur et commencer le quiz
+     * @throws RemoteException
+     */
     public Utilisateur() throws RemoteException {
         super();
         questionCourrante = 0;
@@ -35,6 +44,9 @@ public class Utilisateur extends UnicastRemoteObject{
         laQuestionSuivante();
     }
 
+    /**
+     * Pour initilaliser l'interface utilisateur avec Java Swing
+     */
     private void initialiseGUI() {
         frame = new JFrame("Quiz sur ReactJs");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -69,6 +81,10 @@ public class Utilisateur extends UnicastRemoteObject{
         frame.setVisible(true);
     }
 
+    /**
+     * Preparer la question suivante s'elle existe
+     * Sinon, on affiche le score
+     */
     private void laQuestionSuivante() {
         try {
             Question question = serveur.questionSuivante();
@@ -94,10 +110,14 @@ public class Utilisateur extends UnicastRemoteObject{
         }
     }
 
+    /**
+     * L'action Listener du button Envoyer
+     */
     private class EnvoyerButtonActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
+                //Par défaut n'est pas sélectionné
                 int choixSelectionne = -1;
                 for (int i = 0; i < choixButtons.length; i++) {
                     if (choixButtons[i].isSelected()) {
